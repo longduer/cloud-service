@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author allen xiaoweijiagou@163.com
+ * @author allen lucy_lun@163.com
  */
 @Configuration
 public class LogAutoConfiguration {

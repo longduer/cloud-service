@@ -23,7 +23,7 @@ public class SwaggerConfig {
 	public Docket docket() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("用户中心swagger接口文档")
 				.apiInfo(new ApiInfoBuilder().title("用户中心swagger接口文档")
-						.contact(new Contact("allen", "", "xiaoweijiagou@163.com")).version("1.0").build())
+						.contact(new Contact("allen", "", "lucy_lun@163.com")).version("1.0").build())
 				.select().paths(PathSelectors.any()).build();
 	}
 }

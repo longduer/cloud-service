@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * 授权服务器配置
  *
- * @author allen xiaoweijiagou@163.com
+ * @author allen lucy_lun@163.com
  */
 @Configuration
 @EnableAuthorizationServer
@@ -160,7 +160,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
      * jwt签名key，可随意指定<br>
      * 如配置文件里不设置的话，冒号后面的是默认值
      */
-    @Value("${access_token.jwt-signing-key:xiaoweijiagou}")
+    @Value("${access_token.jwt-signing-key:lucy_lun}")
     private String signingKey;
 
     /**

@@ -8,7 +8,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 /**
  * 配置中心
  * 
- * @author allen xiaoweijiagou@163.com
+ * @author allen lucy_lun@163.com
  *
  */
 @EnableConfigServer

@@ -13,7 +13,7 @@ import com.cloud.file.model.FileSource;
 /**
  * 阿里云存储文件
  * 
- * @author allen xiaoweijiagou@163.com
+ * @author allen lucy_lun@163.com
  *
  */
 @Service("aliyunFileServiceImpl")
