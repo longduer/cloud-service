@@ -10,7 +10,7 @@ spring:
           searchLocations: classpath:/configs/{profile}
 #          searchLocations: file:/d:/configs/{profile}
         git:
-          uri: https://gitee.com/zhang.w/cloud-service-configs.git
+          uri: https://github.com/allenyiwen/cloud-service-config.git
           default-label: master
           force-pull: true
           searchPaths: '{profile}'
