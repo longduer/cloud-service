@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * 网关系统
  * 
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@cmsr.chinamobile.com
  *
  */
 @EnableFeignClients

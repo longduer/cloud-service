@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2018-06-17 09:47:24
+Date: 2019-06-17 09:47:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -38,8 +38,8 @@ CREATE TABLE `app_user` (
 -- ----------------------------
 -- Records of app_user
 -- ----------------------------
-INSERT INTO `app_user` VALUES ('1', 'admin', '$2a$10$3uOoX1ps14CxuotogUoDreW8zXJOZB9XeGdrC/xDV36hhaE8Rn9HO', '测试1', '', '', '1', '1', 'APP', '2018-01-17 16:57:01', '2018-01-17 16:57:01');
-INSERT INTO `app_user` VALUES ('2', 'superadmin', '$2a$10$.gLkG0j2kM0stWoOvPBvqu0H9uSD0HUlpErI.PTKyZQkSUZIV2wFq', '超级管理员', null, null, '1', '1', 'BACKEND', '2018-01-19 20:30:11', '2018-01-19 20:30:11');
+INSERT INTO `app_user` VALUES ('1', 'admin', '$2a$10$3uOoX1ps14CxuotogUoDreW8zXJOZB9XeGdrC/xDV36hhaE8Rn9HO', '测试1', '', '', '1', '1', 'APP', '2019-01-17 16:57:01', '2019-01-17 16:57:01');
+INSERT INTO `app_user` VALUES ('2', 'superadmin', '$2a$10$.gLkG0j2kM0stWoOvPBvqu0H9uSD0HUlpErI.PTKyZQkSUZIV2wFq', '超级管理员', null, null, '1', '1', 'BACKEND', '2019-01-19 20:30:11', '2019-01-19 20:30:11');
 
 -- ----------------------------
 -- Table structure for sys_permission
@@ -58,41 +58,41 @@ CREATE TABLE `sys_permission` (
 -- ----------------------------
 -- Records of sys_permission
 -- ----------------------------
-INSERT INTO `sys_permission` VALUES ('1', 'back:permission:save', '保存权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('2', 'back:permission:update', '修改权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('3', 'back:permission:delete', '删除权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('4', 'back:permission:query', '查询权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('5', 'back:role:save', '添加角色', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('6', 'back:role:update', '修改角色', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('7', 'back:role:delete', '删除角色', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('8', 'back:role:permission:set', '给角色分配权限', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('9', 'back:user:query', '用户查询', '2018-01-18 17:12:00', '2018-01-18 17:12:05');
-INSERT INTO `sys_permission` VALUES ('10', 'back:user:update', '修改用户', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('11', 'back:user:role:set', '给用户分配角色', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('12', 'back:user:password', '用户重置密码', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('13', 'back:menu:save', '添加菜单', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('14', 'back:menu:update', '修改菜单', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('15', 'back:menu:delete', '删除菜单', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('16', 'back:menu:query', '查询菜单', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('17', 'back:menu:set2role', '给角色分配菜单', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('18', 'back:role:query', '查询角色', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('19', 'user:role:byuid', '获取用户的角色', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('20', 'role:permission:byroleid', '获取角色的权限', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('21', 'menu:byroleid', '获取角色的菜单', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('22', 'ip:black:query', '查询黑名单ip', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('23', 'ip:black:save', '添加黑名单ip', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('24', 'ip:black:delete', '删除黑名单ip', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('25', 'log:query', '日志查询', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('26', 'file:query', '文件查询', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('27', 'file:del', '文件删除', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('28', 'mail:save', '保存邮件', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('29', 'mail:update', '修改邮件', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('30', 'mail:query', '邮件查询', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('31', 'sms:query', '短信发送记录查询', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
-INSERT INTO `sys_permission` VALUES ('32', 'client:save', '保存client', '2018-06-28 17:06:39', '2018-06-28 17:06:39');
-INSERT INTO `sys_permission` VALUES ('33', 'client:update', '修改client', '2018-06-28 17:06:39', '2018-06-28 17:06:39');
-INSERT INTO `sys_permission` VALUES ('34', 'client:query', '查询client', '2018-06-28 17:06:39', '2018-06-28 17:06:39');
-INSERT INTO `sys_permission` VALUES ('35', 'client:del', '删除client', '2018-06-28 17:06:39', '2018-06-28 17:06:39');
+INSERT INTO `sys_permission` VALUES ('1', 'back:permission:save', '保存权限标识', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('2', 'back:permission:update', '修改权限标识', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('3', 'back:permission:delete', '删除权限标识', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('4', 'back:permission:query', '查询权限标识', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('5', 'back:role:save', '添加角色', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('6', 'back:role:update', '修改角色', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('7', 'back:role:delete', '删除角色', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('8', 'back:role:permission:set', '给角色分配权限', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('9', 'back:user:query', '用户查询', '2019-01-18 17:12:00', '2019-01-18 17:12:05');
+INSERT INTO `sys_permission` VALUES ('10', 'back:user:update', '修改用户', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('11', 'back:user:role:set', '给用户分配角色', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('12', 'back:user:password', '用户重置密码', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('13', 'back:menu:save', '添加菜单', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('14', 'back:menu:update', '修改菜单', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('15', 'back:menu:delete', '删除菜单', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('16', 'back:menu:query', '查询菜单', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('17', 'back:menu:set2role', '给角色分配菜单', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('18', 'back:role:query', '查询角色', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('19', 'user:role:byuid', '获取用户的角色', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('20', 'role:permission:byroleid', '获取角色的权限', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('21', 'menu:byroleid', '获取角色的菜单', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('22', 'ip:black:query', '查询黑名单ip', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('23', 'ip:black:save', '添加黑名单ip', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('24', 'ip:black:delete', '删除黑名单ip', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('25', 'log:query', '日志查询', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('26', 'file:query', '文件查询', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('27', 'file:del', '文件删除', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('28', 'mail:save', '保存邮件', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('29', 'mail:update', '修改邮件', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('30', 'mail:query', '邮件查询', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('31', 'sms:query', '短信发送记录查询', '2019-01-18 17:06:39', '2019-01-18 17:06:42');
+INSERT INTO `sys_permission` VALUES ('32', 'client:save', '保存client', '2019-06-28 17:06:39', '2019-06-28 17:06:39');
+INSERT INTO `sys_permission` VALUES ('33', 'client:update', '修改client', '2019-06-28 17:06:39', '2019-06-28 17:06:39');
+INSERT INTO `sys_permission` VALUES ('34', 'client:query', '查询client', '2019-06-28 17:06:39', '2019-06-28 17:06:39');
+INSERT INTO `sys_permission` VALUES ('35', 'client:del', '删除client', '2019-06-28 17:06:39', '2019-06-28 17:06:39');
 
 -- ----------------------------
 -- Table structure for sys_role
@@ -111,7 +111,7 @@ CREATE TABLE `sys_role` (
 -- ----------------------------
 -- Records of sys_role
 -- ----------------------------
-INSERT INTO `sys_role` VALUES ('1', 'SUPER_ADMIN', '超级管理员', '2018-01-19 20:32:16', '2018-01-19 20:32:18');
+INSERT INTO `sys_role` VALUES ('1', 'SUPER_ADMIN', '超级管理员', '2019-01-19 20:32:16', '2019-01-19 20:32:18');
 
 -- ----------------------------
 -- Table structure for sys_role_permission

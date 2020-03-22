@@ -54,7 +54,7 @@ public class MenuController {
 				.collect(Collectors.toList());
 		if (!CollectionUtils.isEmpty(child)) {
 			menu.setChild(child);
-			// 2018.06.09递归设置子元素，多级菜单支持
+			// 2019.06.09递归设置子元素，多级菜单支持
 			child.parallelStream().forEach(c -> {
 				setChild(c, menus);
 			});

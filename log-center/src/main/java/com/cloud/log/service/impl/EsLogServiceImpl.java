@@ -43,7 +43,7 @@ import com.cloud.model.log.Log;
 /**
  * 日志存储到elasticsearch实现
  *
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@cmsr.chinamobile.com
  */
 //@Service
 public class EsLogServiceImpl implements LogService, ApplicationContextAware {
@@ -91,7 +91,7 @@ public class EsLogServiceImpl implements LogService, ApplicationContextAware {
 				queryBuilder.must(QueryBuilders.wildcardQuery("username", "*" + username + "*"));
 			}
 
-			// 模块精确匹配 2018.07.29改为模糊匹配
+			// 模块精确匹配 2019.07.29改为模糊匹配
 			String module = MapUtils.getString(params, "module");
 			if (StringUtils.isNoneBlank(module)) {
 //				queryBuilder.must(QueryBuilders.matchQuery("module", module));

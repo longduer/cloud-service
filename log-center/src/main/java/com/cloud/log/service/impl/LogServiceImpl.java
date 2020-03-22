@@ -18,7 +18,7 @@ import com.cloud.model.log.Log;
 /**
  * 日志存储到mysql实现
  *
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@cmsr.chinamobile.com
  */
 //@Primary
 @Service

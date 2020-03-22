@@ -5,10 +5,14 @@ import java.util.Date;
 
 import lombok.Data;
 
+/**
+ *
+ */
 @Data
 public class AppUser implements Serializable {
+	private static final long serialVersionUID = -3770524765010588222L;
 
-	private static final long serialVersionUID = 611197991672067628L;
+	//private static final long serialVersionUID = 611197991672067628L;
 
 	private Long id;
 	private String username;

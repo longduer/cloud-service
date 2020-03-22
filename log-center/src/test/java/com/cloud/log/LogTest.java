@@ -7,7 +7,7 @@ import org.junit.Test;
 public class LogTest {
 
     /**
-     * 2018.07.29之前的t_log数据可运行此test生成update语句修复一下
+     * 2019.07.29之前的t_log数据可运行此test生成update语句修复一下
      */
     @SuppressWarnings("deprecation")
     @Test

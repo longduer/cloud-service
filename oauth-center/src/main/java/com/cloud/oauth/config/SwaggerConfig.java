@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * swagger文档
  * 
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@cmsr.chinamobile.com
  *
  */
 @Configuration
@@ -23,7 +23,7 @@ public class SwaggerConfig {
 	public Docket docket() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("认证中心swagger接口文档")
 				.apiInfo(new ApiInfoBuilder().title("认证中心swagger接口文档")
-						.contact(new Contact("allen", "", "lucy_lun@163.com")).version("1.0").build())
+						.contact(new Contact("allen", "", "zhangxuelun@cmsr.chinamobile.com")).version("1.0").build())
 				.select().paths(PathSelectors.any()).build();
 	}
 }

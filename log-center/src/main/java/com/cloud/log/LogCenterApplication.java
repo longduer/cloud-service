@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * 日志中心
  * 
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@chinamobile.com
  *
  */
 @EnableDiscoveryClient

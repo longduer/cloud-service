@@ -30,14 +30,14 @@ import lombok.extern.slf4j.Slf4j;
 @Service("userDetailsService")
 public class UserDetailServiceImpl implements UserDetailsService {
 
-    @Autowired
-    private UserClient userClient;
-    @Autowired
-    private BCryptPasswordEncoder passwordEncoder;
-    @Autowired
-    private SmsClient smsClient;
+        @Autowired
+        private UserClient userClient;
+        @Autowired
+        private BCryptPasswordEncoder passwordEncoder;
+        @Autowired
+        private SmsClient smsClient;
 
-    @Override
+        @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         // 为了支持多类型登录，这里username后面拼装上登录类型,如username|type
         String[] params = username.split("\\|");

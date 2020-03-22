@@ -1,6 +1,8 @@
 package com.cloud.oauth.controller;
 
 import com.cloud.log.autoconfigure.LogMqClient;
+import com.cloud.model.log.Log;
+import com.cloud.oauth.feign.LogClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -10,6 +12,9 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Date;
+import java.util.concurrent.CompletableFuture;
 
 @Slf4j
 @RestController
@@ -24,7 +29,7 @@ public class OAuth2Controller {
      * 这里的实现类是org.springframework.security.oauth2.provider.OAuth2Authentication<br>
      * <p>
      * 因此这只是一种写法，下面注释掉的三个方法也都一样，这四个方法任选其一即可，也只能选一个，毕竟uri相同，否则启动报错<br>
-     * 2018.05.23改为默认用这个方法，好理解一点
+     * 2019.05.23改为默认用这个方法，好理解一点
      *
      * @return
      */
@@ -83,7 +88,7 @@ public class OAuth2Controller {
     /**
      * 注销登陆/退出
      * 移除access_token和refresh_token<br>
-     * 2018.06.28 改为用ConsumerTokenServices，该接口的实现类DefaultTokenServices已有相关实现，我们不再重复造轮子
+     * 2019.06.28 改为用ConsumerTokenServices，该接口的实现类DefaultTokenServices已有相关实现，我们不再重复造轮子
      *
      * @param access_token
      */
@@ -96,8 +101,8 @@ public class OAuth2Controller {
         }
     }
 
-//    @Autowired
-//    private LogClient logClient;
+   @Autowired
+   private LogClient logClient;
     @Autowired
     private LogMqClient logMqClient;
 
@@ -109,17 +114,17 @@ public class OAuth2Controller {
     private void saveLogoutLog(String username) {
         log.info("{}退出", username);
         // 异步
-//        CompletableFuture.runAsync(() -> {
-//            try {
-//                Log log = Log.builder().username(username).module("退出").createTime(new Date()).build();
-//                logClient.save(log);
-//            } catch (Exception e) {
-//                // do nothing
-//            }
-//
-//        });
-        // 2018.07.29 调整为mq的方式记录退出日志
-        logMqClient.sendLogMsg("退出", username, null, null, true);
+        CompletableFuture.runAsync(() -> {
+            try {
+                Log log = Log.builder().username(username).module("退出").createTime(new Date()).build();
+                logClient.save(log);
+            } catch (Exception e) {
+                // do nothing
+            }
+
+        });
+        // 2019.07.29 调postAccessToken整为mq的方式记录退出日志
+        //logMqClient.sendLogMsg("退出", username, null, null, true);
     }
 
 }

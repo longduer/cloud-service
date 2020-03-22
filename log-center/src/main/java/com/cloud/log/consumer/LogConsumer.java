@@ -14,7 +14,7 @@ import com.cloud.model.log.constants.LogQueue;
 /**
  * 从mq队列消费日志数据
  * 
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@cmsr.chinamobile.com
  *
  */
 @Component

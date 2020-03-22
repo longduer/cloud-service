@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author allen lucy_lun@163.com
+ * @author allen zhangxuelun@cmsr.chinamobile.com
  */
 @Configuration
 public class LogAutoConfiguration {
@@ -30,7 +30,7 @@ public class LogAutoConfiguration {
 
     /**
      * 将LogMqClient声明成Bean
-     * 2018.07.29添加
+     * 2019.07.29添加
      */
     @Bean
     public LogMqClient logMqClient() {
